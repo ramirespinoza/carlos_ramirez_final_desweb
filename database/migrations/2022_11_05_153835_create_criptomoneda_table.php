@@ -14,7 +14,7 @@ class CreateCriptomonedaTable extends Migration
     public function up()
     {
         Schema::create('criptomoneda', function (Blueprint $table) {
-            $table->id();
+            $table->integer('id')->autoIncrement();
             $table->string('logotipo', 105);
             $table->string('nombre', 75);
             $table->string('descripcion', 200);
